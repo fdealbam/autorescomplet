@@ -63,8 +63,15 @@ presentation = dbc.Card(
                            "color": "white",
                            "background-color": "#6A1B9A"}),
 
-     dbc.Button(
-                html.Span(["", html.H1(className="bi bi-envelope", style={ "background-color": "#6A1B9A"}),]),),
+            dbc.Button(html.Span(["", html.H1(className="far fa-envelope", 
+                                      style={"background-color": "#6A1B9A","color":"white"} 
+                                             )]),
+                      style={"background-color": "#6A1B9A"},),
+                                  
+            
+   #         dbc.Button(
+   #             html.Span(["", html.H1(className="far fa-envelope", style={"color": "white",
+   #                        "background-color": "#6A1B9A"}),]),),
         ]),
     style={"width": "13rem", 
           "border": "0",
