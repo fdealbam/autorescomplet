@@ -3,7 +3,12 @@ from bokeh.layouts import row
 from bokeh.models.sources import ColumnDataSource
 from bokeh.models.widgets import RangeSlider
 from bokeh.plotting import figure
-
+from bokeh.io import show
+from bokeh.models import LogColorMapper
+from bokeh.palettes import Viridis6 as palette
+from bokeh.plotting import figure
+from bokeh.sampledata.unemployment import data as unemployment
+from bokeh.sampledata.us_counties import data as counties
 import pandas as pd
 
 df = pd.read_csv('C:/sample_data/tempdata.csv')
