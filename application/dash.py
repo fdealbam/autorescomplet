@@ -106,7 +106,7 @@ autores = dbc.Card(
                            'text-transform': "lowercase",
                           "background-color": "orange"}),
 
-            html.H5("Aeleen Miranda", 
+            html.H5("Aeelen Miranda", 
                     style={'textAlign': 'left',
                            "color": "white",
                           "background-color": "orange"}),
@@ -134,7 +134,7 @@ laboratorio = dbc.Card(
                     style={'textAlign': 'left',
                            "color": "white",
                           "background-color": "orange"}),
-            html.H6("Somos una iniciativa para la integrar procesos de Machine Learning (aprendizaje automatizado) e Inteligencia Artificial e Inteligencia Artificial a las decisiones ejecutivas y de política pública. Colaboramos con cualquier entidad o institucion por el placer de innovar", 
+            html.H6("Somos una iniciativa para integrar procesos de Machine Learning (aprendizaje automatizado) e Inteligencia Artificial e Inteligencia Artificial a las decisiones ejecutivas y de política pública. Colaboramos con cualquier entidad o institucion por el placer de innovar", 
                     style={'textAlign': 'left',
                            "color": "black",
                            'text-transform': "lowercase",
