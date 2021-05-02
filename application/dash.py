@@ -147,11 +147,11 @@ autores = dbc.Card(
 laboratorio = dbc.Card(
     dbc.CardBody(
         [
-            html.H5("Laboratorio para la Innovación Estadística", 
+            html.H5("Laboratorio para el Aprendizaje de la Innovación", 
                     style={'textAlign': 'left',
                            "color": "white",
                           "background-color": "orange"}),
-            html.H6("Somos una iniciativa para integrar procesos de Machine Learning (aprendizaje automatizado) e Inteligencia Artificial e Inteligencia Artificial a las decisiones ejecutivas y de política pública. Colaboramos con cualquier entidad o institucion por el placer de innovar", 
+            html.H6("Somos una iniciativa para integrar procesos de Machine Learning (aprendizaje automatizado) e Inteligencia Artificial a las decisiones ejecutivas y de política pública. Colaboramos con cualquier entidad o institucion por el placer de innovar", 
                     style={'textAlign': 'left',
                            "color": "black",
                            'text-transform': "lowercase",
