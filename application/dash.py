@@ -1,6 +1,3 @@
-
-
-
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -208,10 +205,86 @@ body = html.Div([
     
       ])  
 
-app.layout = html.Div([body])
-#app.layout = html.Div(children=[html.Img(className='icon')])
+##########################################################################################################
+#Collapse:
+collapse = html.Div(
+    [
+        dbc.Button(
+            "Open collapse",
+            id="collapse-button",
+            className="mb-3",
+            color="primary",
+            style={'margin-left': '255px',}
+        ),
+        dbc.Collapse(
+            html.P("never hide component"),
+            id="collapse",
+            style={'margin-left': '255px', }), 
+        
+                    
+                 ]
+)
+
+app.layout = collapse
+
+@app.callback(
+    Output("collapse", "is_open"),
+    [Input("collapse-button", "n_clicks")],
+    [State("collapse", "is_open")],
+)
+def toggle_collapse(n, is_open):
+    if n:
+        return not is_open
+    return is_open
+
+
+##############################################################################################################
+
+#Fade
+
+
+
+
+fade = html.Div(
+    [
+        dbc.Button("Toggle fade", id="fade-button", 
+                   className="mb-3",
+                   style={'margin-left': '255px',}),
+        dbc.Fade(
+            dbc.Card(
+                dbc.CardBody(
+                    html.P(
+                        "This content fades in and out", 
+                        className="card-text",
+                         style={'margin-left': '255px',}
+                    )
+                )
+            ),
+            id="fade",
+            is_in=True,
+            appear=False,
+        ),
+    ]
+)
+
+
+@app.callback(
+    Output("fade", "is_in"),
+    [Input("fade-button", "n_clicks")],
+    [State("fade", "is_in")],
+)
+def toggle_fade(n, is_in):
+    if not n:
+        # Button has never been clicked
+        return True
+    return not is_in
+
+############################################################################
+
+#App
+
+app.layout = html.Div([body, collapse, fade])
+
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
-    
-
