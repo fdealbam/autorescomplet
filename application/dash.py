@@ -51,10 +51,19 @@ presentation = dbc.Card(
                            "background-color": "#6A1B9A"}),
             html.Br(),
             html.Br(),
-          
             html.Br(),
             html.Br(),
             html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+ 
+     
 
             html.H5("Contacto", 
                     style={'textAlign': 'left',
@@ -76,7 +85,7 @@ presentation = dbc.Card(
            #"margin-left": "40px",
           "background-color": "#6A1B9A",
            'color':'#BA68C8',
-           "height": "550px",
+           "height": "850px",
           })
 
 
@@ -98,7 +107,7 @@ autores = dbc.Card(
                     style={'textAlign': 'left',
                            "color": "white",
                           "background-color": "orange"}),
-            html.H6("Es ingeniero ambiental por el Instituto Tecnológico de Misantla (Veracruz), ha colaborado en varias publicaciones anteriores tanto del CESOP como de la Cámara de Diputados. Actualmente es consultor ambiental", 
+            html.H6("Ingeniero ambiental por el Instituto Tecnológico de Misantla (Veracruz), ha colaborado en varias publicaciones anteriores tanto del CESOP como de la Cámara de Diputados. Actualmente es consultor ambiental", 
                     style={'textAlign': 'left',
                            "color": "black",
                            'text-transform': "lowercase",
@@ -108,12 +117,22 @@ autores = dbc.Card(
                     style={'textAlign': 'left',
                            "color": "white",
                           "background-color": "orange"}),
-            html.H6("Es especialista en Sistemas de Información Geográfica (SIG) con licenciatura en Estudios Socio territoriales por la Universidad Autónoma Metropolitana (UAM Cuajimalpa). Se ha desarrollado principalmente en consultoría, donde haelaborado estudios de impacto en mercados", 
+            html.H6("Especialista en Sistemas de Información Geográfica (SIG) con licenciatura en Estudios Socio territoriales por la Universidad Autónoma Metropolitana (UAM Cuajimalpa). Se ha desarrollado principalmente en consultoría, donde haelaborado estudios de impacto en mercados", 
                     style={'textAlign': 'left',
                            "color": "black",
                            'text-transform': "lowercase",
                           "background-color": "orange"}),
-
+            
+            html.H5("Josefina Pérez Espino", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "orange"}),
+            html.H6("Doctora en Geografía Humana por la Universidad de Sussex (2003-2007) y Maestra en Relaciones Internacionales por la Universidad de San Diego (1993-1996) con estancia de investigación en la Universidad de Turín (2017). Profesora de tiempo completo en la Universidad Pedagógica Nacional (UPN), Unidad Tijuana (de 2017 a la fecha) donde es coordinadora de Posgrado (2020 a la fecha). ha publicado artículos en revistas nacionales e internacionales y en 5 libros, además de participación y coordinación en proyectos de investigación a nivel nacional e internacional. Fundadora y miembros de RECFronteras", 
+                    style={'textAlign': 'left',
+                           "color": "black",
+                           'text-transform': "lowercase",
+                          "background-color": "orange"}),
+            
             
         ]),
     
@@ -186,7 +205,7 @@ body = html.Div([
 
     dbc.Row([
         dbc.Col(dbc.Card(laboratorio), #sm={  "offset": 1, }),#Variables Vivienda
-               style={'margin-top': '-530px',
+               style={'margin-top': '-830px',
                       'margin-left': '240px', 
                #       'width': '479px',
                #       'height': '100%',
@@ -196,7 +215,7 @@ body = html.Div([
     
         dbc.Col(dbc.Card(autores), #sm={  "offset": 1, }),#Variables Vivienda
         #dbc.Col(dbc.Card(card2),                      #población total
-               style={'margin-top': '-380px',       #arriba
+               style={'margin-top': '-680px',       #arriba
                       'margin-left': '255px', 
                #       'width': '479px',
                #       'height': '100%',
@@ -207,84 +226,87 @@ body = html.Div([
       ])  
 
 ##########################################################################################################
-#Collapse:
-collapse = html.Div(
-    [
-        dbc.Button(
-            "Open collapse",
-            id="collapse-button",
-            className="mb-3",
-            color="primary",
-            style={'margin-left': '255px',}
-        ),
-        dbc.Collapse(
-            html.P("never hide component"),
-            id="collapse",
-            style={'margin-left': '255px', }), 
-        
-                    
-                 ]
-)
-
-app.layout = collapse
-
-@app.callback(
-    Output("collapse", "is_open"),
-    [Input("collapse-button", "n_clicks")],
-    [State("collapse", "is_open")],
-)
-def toggle_collapse(n, is_open):
-    if n:
-        return not is_open
-    return is_open
-
-
-##############################################################################################################
-
-#Fade
-
-
-
-
-fade = html.Div(
-    [
-        dbc.Button("Toggle fade", id="fade-button", 
-                   className="mb-3",
-                   style={'margin-left': '255px',}),
-        dbc.Fade(
-            dbc.Card(
-                dbc.CardBody(
-                    html.P(
-                        "This content fades in and out", 
-                        className="card-text",
-                         style={'margin-left': '255px',}
-                    )
-                )
-            ),
-            id="fade",
-            is_in=True,
-            appear=False,
-        ),
-    ]
-)
-
-
-@app.callback(
-    Output("fade", "is_in"),
-    [Input("fade-button", "n_clicks")],
-    [State("fade", "is_in")],
-)
-def toggle_fade(n, is_in):
-    if not n:
-        # Button has never been clicked
-        return True
-    return not is_in
-
+##Collapse:
+#collapse = html.Div(
+#    [
+#        dbc.Button(
+#            "Felipe de Alba",
+#            id="collapse-button",
+#            className="mb-3",
+#            color="warning",
+#            #background-color= "orange",
+#            style={'margin-left': '285px',}
+#        ),
+#        dbc.Collapse(
+#            html.P("Doctor en Planeación Urbana por la Universidad de Montreal (2004-2008) con estancias de dos años en el Massachusetts Institute of Technology (MIT) (2009-2011) y de un año en l´École normale supérieure (ENS) de Lyon (Francia) (2012). También fue profesor invitado de tiempo completo “C” en la Universidad Autónoma Metropolitana (Cuajimalpa) (2012- 2014). Es investigador “A” del Centro de Estudios Sociales y de Opinión Publica (CESOP). Ha publicado más de 60 artículos en revistas internacionales y 12 libros"),
+#            id="collapse",
+#            style={'margin-left': '255px', }), 
+#        
+#                    
+#                 ]
+#)
+#
+#app.layout = collapse
+#
+#@app.callback(
+#    Output("collapse", "is_open"),
+#    [Input("collapse-button", "n_clicks")],
+#    [State("collapse", "is_open")],
+#)
+#def toggle_collapse(n, is_open):
+#    if n:
+#        return not is_open
+#    return is_open
+#
+#
+###############################################################################################################
+#
+##Fade
+#
+#
+#
+#
+#fade = html.Div(
+#    [
+#        dbc.Button("Toggle fade", id="fade-button", 
+#                   className="mb-3",
+#                   style={'margin-left': '255px',}),
+#        dbc.Fade(
+#            dbc.Card(
+#                dbc.CardBody(
+#                    html.P(
+#                        "This content fades in and out", 
+#                        className="card-text",
+#                         style={'margin-left': '255px',}
+#                    )
+#                )
+#            ),
+#            id="fade",
+#            is_in=True,
+#            appear=False,
+#        ),
+#    ]
+#)
+#
+#
+#@app.callback(
+#    Output("fade", "is_in"),
+#    [Input("fade-button", "n_clicks")],
+#    [State("fade", "is_in")],
+#)
+#def toggle_fade(n, is_in):
+#    if not n:
+#        # Button has never been clicked
+#        return True
+#    return not is_in
+#
 ############################################################################
 
 #App
 
-app.layout = html.Div([body, collapse, fade])
+app.layout = html.Div([body, 
+                       #collapse, fade
+                      ])
 
 
 if __name__ == '__main__':
