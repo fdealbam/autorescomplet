@@ -57,14 +57,7 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
             html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
+           
  
      
 
@@ -78,7 +71,32 @@ presentation = dbc.Card(
                                              )]),
                       style={"background-color": "light"},),
                                   
-            
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+          
+ 
+     
+
+            html.H5("Productos", 
+                    style={'textAlign': 'left',
+                           "color": "gray",
+                           "background-color": "light"}),
+
+#            dbc.Button(html.Span(["", html.H1(className="far fa-envelope", 
+#                                      style={"background-color": "light","color":"lightgray"} 
+#                                             )]),
+#                      style={"background-color": "light"},),
+                                  
    #         dbc.Button(
    #             html.Span(["", html.H1(className="far fa-envelope", style={"color": "white",
    #                        "background-color": "#6A1B9A"}),]),),
@@ -88,7 +106,7 @@ presentation = dbc.Card(
            #"margin-left": "40px",
           "background-color": "light",
            'color':'#BA68C8',
-           "height": "850px",
+           "height": "1400px",
           })
 
 
@@ -147,10 +165,56 @@ autores = dbc.Card(
                            "font-size": 12,
                           "background-color": "info"}),
             
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Hr(),
+            html.H5("Productos interactivos", 
+                    style={'textAlign': 'left',
+                           "color": "black",
+                          "background-color": "light"}),
+            
+             dbc.Nav(
+            [
+                dbc.NavLink("Contagios y decesos por COVID-19 ", href="https://camaradiputados.herokuapp.com/", active="exact"),
+                dbc.NavLink("Feminicidios", href="https://camaradiputados.herokuapp.com/", active="exact"),
+                dbc.NavLink("Violencia familiar", href="https://violenciafamiliar.herokuapp.com/", active="exact"),
+                dbc.NavLink("Violaciones", href="https://violacion.herokuapp.com/", active="exact"),
+                dbc.NavLink("Abuso sexual", href="https://abusosexual.herokuapp.com/", active="exact"),
+                #dbc.NavLink("Dashboard sobre el proceso de vacunación (utilizado por la SRE)", href="https://vacunassre.herokuapp.com/", active="exact"),
+                dbc.NavLink("Metrópolis mexicanas en 2020", href="https://plataformacenso2020.herokuapp.com/", active="exact"),
+            ],
+                
+           # vertical=True,
+            #pills=True,
+        ),
+           html.Br(),
+            html.H5("Análisis estratégicos", 
+                    style={'textAlign': 'left',
+                           "color": "black",
+                          "background-color": "light"}),
+             dbc.Nav(
+            [
+                dbc.NavLink("¿Cómo se vive en la metrópolis? Propuesta analítica ", href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)", active="exact"),
+                dbc.NavLink("Decesos por COVID-19. Evidencia estadística de sus ritmos y temporalidades", href="https://www.researchgate.net/publication/352106923_Decesos_por_COVID-19. Evidencia estadistica de sus ritmos y temporalidades (2020)", active="exact"),
+                dbc.NavLink("Perfil socioeconómico de 50 municipios metropolitanos con más contagiosshboard sobre el delito de violaciones", href="https://www.researchgate.net/publication/352106838_Perfil_socioeconomico_de_50_municipios_metropolitanos_con_mas_contagios", active="exact"),
+                dbc.NavLink("Ranking Municipal de los Delitos en México (2015-2019). Ejercicios de visualización", href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", active="exact"),
+                dbc.NavLink("Ranking Estatal de los Delitos en México (2015-2019). Ejercicios de visualización", href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", active="exact"),
+                dbc.NavLink("Metrópolis mexicanas en cifras. Propuesta visual de la Estadística Metropolitana", href="https://www.researchgate.net/publication/352227273_Metropolis_mexicanas_en_cifras", active="exact"),
+                dbc.NavLink("Municipios Mexicanos en Cifras. Propuesta Visual de la Estadística Municipal", href="https://www.researchgate.net/publication/352136229_2019_Municipios_mexicanos_en_cifras", active="exact"),
+               # dbc.NavLink("Dashboard sobre las metrópolis en 2020", href="https://plataformacenso2020.herokuapp.com/", active="exact"),
+            ],
+                
+                
+                
+           # vertical=True,
+            #pills=True,
+        ),  
 
         ]),
     
-    style={"width": "48rem", 
+    style={"width": "58rem", 
           "border": "0",
           "margin-left": "-4px",
           "background-color": "light",
@@ -216,12 +280,12 @@ body = html.Div([
 
     dbc.Row([
         dbc.Col(dbc.Card(laboratorio), #sm={  "offset": 1, }),#Variables Vivienda
-               style={'margin-top': '-830px',
+               style={'margin-top': '-1400px',
                       'margin-left': '240px', 
                      }),
     
         dbc.Col(dbc.Card(autores), #sm={  "offset": 1, }),#Variables Vivienda
-               style={'margin-top': '-680px',       #arriba
+               style={'margin-top': '-1250px',       #arriba
                       'margin-left': '255px', 
                }, sm={  "offset": 1, })
      ], className="blockquote"),
@@ -242,5 +306,4 @@ app.layout = html.Div([body,
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
-    
     
