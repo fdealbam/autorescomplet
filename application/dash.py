@@ -1,6 +1,8 @@
 
 #presentación de autores 
 
+#presentación de autores 
+
 import dash
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
@@ -106,7 +108,7 @@ presentation = dbc.Card(
            #"margin-left": "40px",
           "background-color": "light",
            'color':'#BA68C8',
-           "height": "1400px",
+           "height": "2400px",
           })
 
 
@@ -164,9 +166,7 @@ autores = dbc.Card(
                            "color": "black",
                            "font-size": 12,
                           "background-color": "info"}),
-            
-            html.Br(),
-            html.Br(),
+          
             html.Br(),
             html.Br(),
             html.Hr(),
@@ -174,6 +174,7 @@ autores = dbc.Card(
                     style={'textAlign': 'left',
                            "color": "black",
                           "background-color": "light"}),
+          
             
              dbc.Nav(
             [
@@ -189,31 +190,92 @@ autores = dbc.Card(
            # vertical=True,
             #pills=True,
         ),
-           html.Br(),
+           html.Hr(),
             html.H5("Análisis estratégicos", 
                     style={'textAlign': 'left',
                            "color": "black",
                           "background-color": "light"}),
-             dbc.Nav(
+            
+                dbc.Row(
             [
-                dbc.NavLink("¿Cómo se vive en la metrópolis? Propuesta analítica ", href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)", active="exact"),
-                dbc.NavLink("Decesos por COVID-19. Evidencia estadística de sus ritmos y temporalidades", href="https://www.researchgate.net/publication/352106923_Decesos_por_COVID-19. Evidencia estadistica de sus ritmos y temporalidades (2020)", active="exact"),
-                dbc.NavLink("Perfil socioeconómico de 50 municipios metropolitanos con más contagiosshboard sobre el delito de violaciones", href="https://www.researchgate.net/publication/352106838_Perfil_socioeconomico_de_50_municipios_metropolitanos_con_mas_contagios", active="exact"),
-                dbc.NavLink("Ranking Municipal de los Delitos en México (2015-2019). Ejercicios de visualización", href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", active="exact"),
-                dbc.NavLink("Ranking Estatal de los Delitos en México (2015-2019). Ejercicios de visualización", href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", active="exact"),
-                dbc.NavLink("Metrópolis mexicanas en cifras. Propuesta visual de la Estadística Metropolitana", href="https://www.researchgate.net/publication/352227273_Metropolis_mexicanas_en_cifras", active="exact"),
-                dbc.NavLink("Municipios Mexicanos en Cifras. Propuesta Visual de la Estadística Municipal", href="https://www.researchgate.net/publication/352136229_2019_Municipios_mexicanos_en_cifras", active="exact"),
-               # dbc.NavLink("Dashboard sobre las metrópolis en 2020", href="https://plataformacenso2020.herokuapp.com/", active="exact"),
-            ],
-                
-                
-                
-           # vertical=True,
-            #pills=True,
-        ),  
-
+           
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Decesos por covid.png?raw=true"),
+                        width=3, lg={'size': 2,   }),
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("2020 Decesos por COVID-19. Evidencia estadística de sus ritmos y temporalidades", 
+                                                    href="https://www.researchgate.net/publication/352106923_Decesos_por_COVID-19. Evidencia estadistica de sus ritmos y temporalidades (2020)", 
+                                                    active="exact"),),
+            ]))]),
+            
+        html.Br(),
+            
+          dbc.Row([
+           
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/50 mpios.png?raw=true"),
+                        width=3, lg={'size': 2,   }),
+           dbc.Col(dbc.Nav([dbc.NavLink("Perfil socioeconómico de 50 municipios metropolitanos con más contagiosshboard sobre el delito de violaciones", 
+                                        href="https://www.researchgate.net/publication/352106838_Perfil_socioeconomico_de_50_municipios_metropolitanos_con_mas_contagios",
+                                        active="exact"),
+            ]))]),
+            
+             html.Br(),
+            
+                 dbc.Row([
+           
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/ranking mapl.png?raw=true"),
+                        width=3, lg={'size': 2,   }),
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Ranking Municipal de los Delitos en México (2015-2019). Ejercicios de visualización", 
+                                                    href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", 
+                                                    active="exact"),),
+            ]))]),
+            
+        html.Br(),
+            
+          dbc.Row(
+            [
+           
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Ranking.png?raw=true"),
+                        width=3, lg={'size': 2,   }),
+           dbc.Col(dbc.Nav([dbc.NavLink("Ranking Estatal de los Delitos en México (2015-2019). Ejercicios de visualización", 
+                                         href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", 
+                                         active="exact"),
+            ]))]),
+             html.Br(),
+            
+                           dbc.Row([
+           
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Metrópolis mexicanas en cifras.png?raw=true"),
+                        width=3, lg={'size': 2,   }),
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Metrópolis mexicanas en cifras. Propuesta visual de la Estadística Metropolitana",
+                                                    href="https://www.researchgate.net/publication/352227273_Metropolis_mexicanas_en_cifras",
+                                                    active="exact"),),
+            ]))]),
+            
+        html.Br(),
+            
+          dbc.Row(
+            [
+           
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Municipios mexicanas en cifras.png?raw=true"),
+                        width=3, lg={'size': 2,   }),
+           dbc.Col(dbc.Nav([dbc.NavLink("Municipios Mexicanos en Cifras. Propuesta Visual de la Estadística Municipal", 
+                                        href="https://www.researchgate.net/publication/352136229_2019_Municipios_mexicanos_en_cifras", 
+                                        active="exact"),
+            ]))]),
+             html.Br(),
+            
+                 dbc.Row(
+            [
+           
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Decesos por covid.png?raw=true"),
+                        width=3, lg={'size': 2,   }),
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("¿Cómo se vive en la metrópolis? Propuesta analítica ", 
+                                                    href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)",
+                                                    active="exact"),),
+            ]))]),
+            
+      
+ 
         ]),
-    
     style={"width": "58rem", 
           "border": "0",
           "margin-left": "-4px",
@@ -280,12 +342,12 @@ body = html.Div([
 
     dbc.Row([
         dbc.Col(dbc.Card(laboratorio), #sm={  "offset": 1, }),#Variables Vivienda
-               style={'margin-top': '-1400px',
+               style={'margin-top': '-2400px',
                       'margin-left': '240px', 
                      }),
     
         dbc.Col(dbc.Card(autores), #sm={  "offset": 1, }),#Variables Vivienda
-               style={'margin-top': '-1250px',       #arriba
+               style={'margin-top': '-2240px',       #arriba
                       'margin-left': '255px', 
                }, sm={  "offset": 1, })
      ], className="blockquote"),
@@ -306,4 +368,3 @@ app.layout = html.Div([body,
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
-    
