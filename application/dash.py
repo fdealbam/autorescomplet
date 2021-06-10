@@ -48,7 +48,7 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
             
-            html.H5("¿Quienes somos?", 
+             html.H5("¿Quienes somos?", 
                     style={'textAlign': 'left',
                            "color": "gray",
                            "background-color": "light"}),
@@ -57,7 +57,16 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
             html.Br(),
-           
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+             html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
  
      
 
@@ -66,9 +75,11 @@ presentation = dbc.Card(
                            "color": "gray",
                            "background-color": "light"}),
 
-            dbc.Button(html.Span(["", html.H1(className="far fa-envelope", 
+            dbc.Button(html.Span(["", 
+                                  html.H1(className="far fa-envelope", 
                                       style={"background-color": "light","color":"lightgray"} 
                                              )]),
+                       href="mailto:aeelenmaeelenmiranda@hotmail.com", 
                       style={"background-color": "light"},),
                                   
             html.Br(),
@@ -84,6 +95,8 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
           
+ 
+     
  
      
 
