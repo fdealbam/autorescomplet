@@ -198,114 +198,150 @@ autores = dbc.Card(
                            "color": "black",
                           "background-color": "light"}),
             
-                 dbc.Row(
-            [
-           
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/zonas metropolitanas.png?raw=true"),
-                       width=3, lg={'size': 2,   }),
-           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("¿Cómo se vive en la metrópolis? Propuesta analítica ", 
-                                                    href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)",
-                                                    active="exact", 
-                        style={'size': 2,  "margin-left": "-30px",  
+            
+       #1er libro     
+            dbc.Row( [dbc.Col(
+               html.A([
+                   html.Img(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/zonas metropolitanas.png?raw=true",
+                            style={'height' : '170px',
+                    'width' : '120px',
+                    'float' : 'left' })],
+                   href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)",
+                   
+                       )),
+           dbc.Col(
+               dbc.Nav([
+                   dbc.NavLink(dbc.NavLink("¿Cómo se vive en la metrópolis? Propuesta analítica ", 
+                        href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)",
+                        active="exact"), 
+                        style={'size': 2, 
+                               "margin-left": "-330px",  
                                "font-family": "Arial Black", 
                                "font-size": 18, 
-                               "color": "lightsalmon"})),
-            ]))]),
+                               "color": "lightsalmon"})])),
+            ]),
             
              html.Br(),
             
-                dbc.Row(
-            [
-           
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Decesos por covid.png?raw=true"),
-                        width=3, lg={'size': 2,   }),
-           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Decesos por COVID-19. Evidencia estadística de sus ritmos y temporalidades", 
-                                                    href="https://www.researchgate.net/publication/352106923_Decesos_por_COVID-19. Evidencia estadistica de sus ritmos y temporalidades (2020)", 
-                                                    active="exact",
-                        style={'size': 2,  "margin-left": "-30px",  
+            ###############################################################################################
+          #2do libro  
+              dbc.Row( [
+                  dbc.Col(html.A([
+                   html.Img(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Decesos por covid.png?raw=true",
+                        style={'height' : '170px',
+                    'width' : '120px',
+                    'float' : 'left' })],
+                  href="https://www.researchgate.net/publication/352106923_Decesos_por_COVID-19. Evidencia estadistica de sus ritmos y temporalidades (2020)", 
+                  )),  
+           dbc.Col(
+               dbc.Nav([
+                   dbc.NavLink(dbc.NavLink("Decesos por COVID-19. Evidencia estadística de sus ritmos y temporalidades", 
+                        href="https://www.researchgate.net/publication/352106923_Decesos_por_COVID-19. Evidencia estadistica de sus ritmos y temporalidades (2020)", 
+                        active="exact"),
+                        style={'size': 2,  "margin-left": "-330px",  
                                "font-family": "Arial Black", 
                                "font-size": 18, 
-                               "color": "lightgray"})),
-            ]))]),
+                               "color": "lightgray"})])),
+            ]),
             
         html.Br(),
-            
-          dbc.Row([
-           
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/50 mpios.png?raw=true"),
-                        width=3, lg={'size': 2,   }),
+         ###############################################################################################
+          #3er libro  
+              dbc.Row( [
+                  dbc.Col(html.A([
+                   html.Img(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/50 mpios.png?raw=true",
+                        style={'height' : '170px',
+                    'width' : '120px',
+                    'float' : 'left' })],
+                      href="https://www.researchgate.net/publication/352106838_Perfil_socioeconomico_de_50_municipios_metropolitanos_con_mas_contagios",
+                  )),
            dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Perfil socioeconómico de 50 municipios metropolitanos con más contagios", 
                                         href="https://www.researchgate.net/publication/352106838_Perfil_socioeconomico_de_50_municipios_metropolitanos_con_mas_contagios",
-                                        active="exact",
-                        style={'size': 2,  "margin-left": "-30px",  
+                                        active="exact"),
+                        style={'size': 2,  "margin-left": "-330px",  
                                "font-family": "Arial Black", 
                                "font-size": 18, 
-                               "color": "lightgray"})),
-                            
-            ]))]),
+                               "color": "lightgray"})])),
+              ]),
             
              html.Br(),
-            
-                 dbc.Row([
-           
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/ranking mapl.png?raw=true"),
-                        width=3, lg={'size': 2,   }),
+         ###############################################################################################
+          #4to libro  
+              dbc.Row( [
+                  dbc.Col(html.A([
+                   html.Img(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/ranking mapl.png?raw=true",
+                      style={'height' : '170px',
+                    'width' : '120px',
+                    'float' : 'left' })],
+                      href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion",
+                  )),
            dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Ranking Municipal de los Delitos en México (2015-2019). Ejercicios de visualización", 
                                                     href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", 
-                                                    active="exact",
-                        style={'size': 2,  "margin-left": "-30px",  
+                                                    active="exact"),
+                        style={'size': 2,  "margin-left": "-330px",  
                                "font-family": "Arial Black", 
                                "font-size": 18, 
-                               "color": "lightgray"})),
-            ]))]),
+                               "color": "lightgray"})])),
+              ]),
             
         html.Br(),
-            
-          dbc.Row(
-            [
-           
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Ranking.png?raw=true"),
-                        width=3, lg={'size': 2,   }),
+    ###############################################################################################
+          #5to libro  
+              dbc.Row( [
+                  dbc.Col(html.A([
+                   html.Img(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Ranking.png?raw=true",
+                        style={'height' : '170px',
+                    'width' : '120px',
+                    'float' : 'left' })],
+                   href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion",
+                  )),
            dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Ranking Estatal de los Delitos en México (2015-2019). Ejercicios de visualización", 
                                          href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", 
-                                         active="exact",
-                        style={'size': 2,  "margin-left": "-30px",  
+                                         active="exact"),
+                        style={'size': 2,  "margin-left": "-330px",  
                                "font-family": "Arial Black", 
                                "font-size": 18, 
-                               "color": "lightgray"})),
-                            
-            ]))]),
+                               "color": "lightgray"})])),
+              ]),
              html.Br(),
-            
-                           dbc.Row([
-           
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Metrópolis mexicanas en cifras.png?raw=true"),
-                        width=3, lg={'size': 2,   }),
+            ###############################################################################################
+          #6to libro  
+              dbc.Row( [
+                  dbc.Col(html.A([
+                   html.Img(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Metrópolis mexicanas en cifras.png?raw=true",
+                    style={'height' : '170px',
+                    'width' : '120px',
+                    'float' : 'left' })],
+                       href="https://www.researchgate.net/publication/352227273_Metropolis_mexicanas_en_cifras",
+                  )),
            dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Metrópolis mexicanas en cifras. Propuesta visual de la Estadística Metropolitana",
                                                     href="https://www.researchgate.net/publication/352227273_Metropolis_mexicanas_en_cifras",
-                                                    active="exact",
-                        style={'size': 2,  "margin-left": "-30px",  
+                                                    active="exact"),
+                        style={'size': 2,  "margin-left": "-330px",  
                                "font-family": "Arial Black", 
                                "font-size": 18, 
-                               "color": "lightgray"})),
-            ]))]),
+                               "color": "lightgray"})])),
+              ]),
             
         html.Br(),
-            
-          dbc.Row(
-            [
-           
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Municipios mexicanas en cifras.png?raw=true"),
-                        width=3, lg={'size': 2,   }),
+        ###############################################################################################
+          #7mo libro  
+              dbc.Row( [
+                  dbc.Col(html.A([
+                   html.Img(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Municipios mexicanas en cifras.png?raw=true",
+                      style={'height' : '170px',
+                    'width' : '120px',
+                    'float' : 'left' })],
+                      href="https://www.researchgate.net/publication/352136229_2019_Municipios_mexicanos_en_cifras", 
+                  )),
            dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Municipios Mexicanos en Cifras. Propuesta Visual de la Estadística Municipal", 
                                         href="https://www.researchgate.net/publication/352136229_2019_Municipios_mexicanos_en_cifras", 
-                                        active="exact",
-                        style={'size': 2,  "margin-left": "-30px",  
+                                        active="exact"),
+                        style={'size': 2,  "margin-left": "-330px",  
                                "font-family": "Arial Black", 
                                "font-size": 18, 
-                               "color": "lightgray"})),
-                            
-            ]))]),
+                               "color": "lightgray"})])),
+              ]),
              html.Br(),
             
       
