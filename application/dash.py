@@ -201,7 +201,7 @@ autores = dbc.Card(
                  dbc.Row(
             [
            
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/Decesos por covid.png?raw=true"),
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/autorescomplet/blob/main/application/static/zonas metropolitanas.png?raw=true"),
                        width=3, lg={'size': 2,   }),
            dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("¿Cómo se vive en la metrópolis? Propuesta analítica ", 
                                                     href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)",
