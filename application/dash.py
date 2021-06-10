@@ -66,9 +66,7 @@ presentation = dbc.Card(
                            "color": "gray",
                            "background-color": "light"}),
 
-            dbc.Button(html.Span(["aeelenmiranda@hotmail.com", 
-                                  style={"text-transform": "lowercase"},
-                                  html.H1(className="far fa-envelope", 
+            dbc.Button(html.Span(["", html.H1(className="far fa-envelope", 
                                       style={"background-color": "light","color":"lightgray"} 
                                              )]),
                       style={"background-color": "light"},),
