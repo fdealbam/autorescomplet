@@ -79,7 +79,7 @@ presentation = dbc.Card(
                                   html.H1(className="far fa-envelope", 
                                       style={"background-color": "light","color":"lightgray"} 
                                              )]),
-                       href="mailto:aeelenmaeelenmiranda@hotmail.com", 
+                       href="mailto:aeelenmiranda@hotmail.com", 
                       style={"background-color": "light"},),
                                   
             html.Br(),
