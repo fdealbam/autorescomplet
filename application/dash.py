@@ -224,7 +224,7 @@ autores = dbc.Card(
                        )),
            dbc.Col(
                dbc.Nav([
-                   dbc.NavLink(dbc.NavLink("¿Cómo se vive en la metrópolis? Propuesta analítica ", 
+                   dbc.NavLink(dbc.NavLink("¿Cómo se vive en las metrópolis en 2020? Propuesta analítica ", 
                         href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)",
                         active="exact"), 
                         style={'size': 2, 
