@@ -1,4 +1,3 @@
-
 #presentación de autores 
 
 import dash
@@ -224,7 +223,7 @@ autores = dbc.Card(
                        )),
            dbc.Col(
                dbc.Nav([
-                   dbc.NavLink(dbc.NavLink("¿Cómo se vive en las metrópolis en 2020? Propuesta analítica ", 
+                   dbc.NavLink(dbc.NavLink("¿Cómo se vive en las metrópolis en 2020? Propuesta analítica ", style={"color": "lightsalmon"},
                         href="https://www.researchgate.net/publication/352064996_2021_Como_se_vive_en_la_metropolis_Propuesta_analitica (2021)",
                         active="exact"), 
                         style={'size': 2, 
@@ -248,7 +247,7 @@ autores = dbc.Card(
                   )),  
            dbc.Col(
                dbc.Nav([
-                   dbc.NavLink(dbc.NavLink("Decesos por COVID-19. Evidencia estadística de sus ritmos y temporalidades", 
+                   dbc.NavLink(dbc.NavLink("Decesos por COVID-19. Evidencia estadística de sus ritmos y temporalidades", style={"color": "lightgray"},
                         href="https://www.researchgate.net/publication/352106923_Decesos_por_COVID-19. Evidencia estadistica de sus ritmos y temporalidades (2020)", 
                         active="exact"),
                         style={'size': 2,  "margin-left": "-330px",  
@@ -268,7 +267,7 @@ autores = dbc.Card(
                     'float' : 'left' })],
                       href="https://www.researchgate.net/publication/352106838_Perfil_socioeconomico_de_50_municipios_metropolitanos_con_mas_contagios",
                   )),
-           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Perfil socioeconómico de 50 municipios metropolitanos con más contagios", 
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Perfil socioeconómico de 50 municipios metropolitanos con más contagios",  style={"color": "lightgray"},
                                         href="https://www.researchgate.net/publication/352106838_Perfil_socioeconomico_de_50_municipios_metropolitanos_con_mas_contagios",
                                         active="exact"),
                         style={'size': 2,  "margin-left": "-330px",  
@@ -288,7 +287,7 @@ autores = dbc.Card(
                     'float' : 'left' })],
                       href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion",
                   )),
-           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Ranking Municipal de los Delitos en México (2015-2019). Ejercicios de visualización", 
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Ranking Municipal de los Delitos en México (2015-2019). Ejercicios de visualización",  style={"color": "lightsalmon"},
                                                     href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", 
                                                     active="exact"),
                         style={'size': 2,  "margin-left": "-330px",  
@@ -308,7 +307,7 @@ autores = dbc.Card(
                     'float' : 'left' })],
                    href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion",
                   )),
-           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Ranking Estatal de los Delitos en México (2015-2019). Ejercicios de visualización", 
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Ranking Estatal de los Delitos en México (2015-2019). Ejercicios de visualización", style={"color": "lightgray"},
                                          href="https://www.researchgate.net/publication/352106653_Ranking_Municipal_de_los_Delitos_en_Mexico_2015-2019_Ejercicios_de_visualizacion", 
                                          active="exact"),
                         style={'size': 2,  "margin-left": "-330px",  
@@ -327,7 +326,7 @@ autores = dbc.Card(
                     'float' : 'left' })],
                        href="https://www.researchgate.net/publication/352227273_Metropolis_mexicanas_en_cifras",
                   )),
-           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Metrópolis mexicanas en cifras. Propuesta visual de la Estadística Metropolitana",
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Metrópolis mexicanas en cifras. Propuesta visual de la Estadística Metropolitana", style={"color": "lightgray"},
                                                     href="https://www.researchgate.net/publication/352227273_Metropolis_mexicanas_en_cifras",
                                                     active="exact"),
                         style={'size': 2,  "margin-left": "-330px",  
@@ -347,7 +346,7 @@ autores = dbc.Card(
                     'float' : 'left' })],
                       href="https://www.researchgate.net/publication/352136229_2019_Municipios_mexicanos_en_cifras", 
                   )),
-           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Municipios Mexicanos en Cifras. Propuesta Visual de la Estadística Municipal", 
+           dbc.Col(dbc.Nav([dbc.NavLink(dbc.NavLink("Municipios Mexicanos en Cifras. Propuesta Visual de la Estadística Municipal", style={"color": "lightsalmon"}, 
                                         href="https://www.researchgate.net/publication/352136229_2019_Municipios_mexicanos_en_cifras", 
                                         active="exact"),
                         style={'size': 2,  "margin-left": "-330px",  
