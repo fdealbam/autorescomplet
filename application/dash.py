@@ -198,6 +198,8 @@ autores = dbc.Card(
                 dbc.NavLink("Acoso sexual", href="https://acososexual.herokuapp.com/", active="exact"),
                 dbc.NavLink("Otras violencias de género", href="https://vgdistintavfam.herokuapp.com/", active="exact"),
                 dbc.NavLink("Trata de personas", href="https://tratadepersonas.herokuapp.com/", active="exact"),
+                dbc.NavLink("Tráfico de menores", href="https://traficodemenores.herokuapp.com/", active="exact"),
+                dbc.NavLink("Hostigamiento sexual", href="https://hostigamientosexual.herokuapp.com/", active="exact"),
                 #dbc.NavLink("Dashboard sobre el proceso de vacunación (utilizado por la SRE)", href="https://vacunassre.herokuapp.com/", active="exact"),
                 dbc.NavLink("Metrópolis mexicanas en 2020", href="https://plataformacenso2020.herokuapp.com/", active="exact"),
             ],
