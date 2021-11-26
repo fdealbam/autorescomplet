@@ -140,7 +140,7 @@ autores = dbc.Card(
                     style={'textAlign': 'left',
                            "color": "black",
                           "background-color": "lignt"}),
-            html.P("Ingeniero ambiental por el Instituto Tecnológico de Misantla (Veracruz), ha colaborado en varias publicaciones anteriores tanto del CESOP como de la Cámara de Diputados. Actualmente es consultor ambiental", 
+            html.P("Ingeniero Ambiental por el Instituto Tecnológico Superior de Misantla (Veracruz), ha colaborado en varias publicaciones anteriores tanto del CESOP como de la Cámara de Diputados. Actualmente es consultor ambiental", 
                     style={'textAlign': 'left',
                            "color": "black",
                            "font-size": 12,
