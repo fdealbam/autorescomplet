@@ -167,15 +167,7 @@ autores = dbc.Card(
                           "background-color": "info"}),
 
                         
-            html.H5("Elena Hernández Palomino", 
-                    style={'textAlign': 'left',
-                           "color": "black",
-                          "background-color": "light"}),
-            html.P("Es Maestra en Planeación Espacial por el CentroGeo. Experta en SIG y en investigación para la argumentación de proyectos y experimentos de innovación social. Ha coordinado proyectos de publicidad y mercadotécnia, tanto para la iniciativa pública como la privada", 
-                    style={'textAlign': 'left',
-                           "color": "black",
-                           "font-size": 12,
-                          "background-color": "info"}),
+          
           
             html.Br(),
             html.Br(),
